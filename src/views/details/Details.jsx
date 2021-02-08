@@ -2,19 +2,31 @@ import React from "react";
 import {
   Avatar,
   Box,
-  Button,
   Chip,
   Container,
   IconButton,
   Paper,
   Typography,
 } from "@material-ui/core";
+import styled from "styled-components";
 import { useHistory } from "react-router-dom";
 import { Fade } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
 import MoreVertIcon from "@material-ui/icons/MoreVert";
 import { withRouter } from "react-router";
 import "./Details.scss";
+
+const Button = styled.button`
+  display: inline-block;
+  color: palevioletred;
+  font-size: 1em;
+  cursor: pointer;
+  margin: 1em;
+  padding: 0.25em 1em;
+  border: 2px solid palevioletred;
+  border-radius: 3px;
+  display: block;
+`;
 
 const Detail = (props) => {
   let history = useHistory();
