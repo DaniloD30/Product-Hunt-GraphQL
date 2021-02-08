@@ -5,16 +5,21 @@ import Typography from "@material-ui/core/Typography";
 import { Avatar, Box } from "@material-ui/core";
 import { withRouter } from "react-router";
 import ArrowDropUpIcon from "@material-ui/icons/ArrowDropUp";
+import styled from "styled-components";
 import "./Posts.scss";
 
-
+const Title = styled.h1`
+  font-size: 1.5em;
+  text-align: center;
+  color: palevioletred;
+`;
 function Posts(props) {
   const { history } = props;
   const { name, description, votes, thumb, node } = props;
 
   const handlePage = (Id, post) => {
     // const { error, loading, data } = useQuery(GET_TOPICS);
-  
+
     history.push(
       {
         pathname: `/detailPost/${Id}`,
@@ -28,14 +33,7 @@ function Posts(props) {
       <CardContent>
         <Box>
           {" "}
-          <Typography
-            className="title"
-            color="textSecondary"
-            variant="h6"
-            gutterBottom
-          >
-            {name}
-          </Typography>
+          <Title>{name}</Title>
         </Box>
 
         <Box className="box">

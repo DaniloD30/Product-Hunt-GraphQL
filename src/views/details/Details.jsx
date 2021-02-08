@@ -27,6 +27,11 @@ const Button = styled.button`
   border-radius: 3px;
   display: block;
 `;
+const Title = styled.h1`
+  font-size: 1.5em;
+  text-align: center;
+  color: black;
+`;
 
 const Detail = (props) => {
   let history = useHistory();
@@ -70,12 +75,12 @@ const Detail = (props) => {
               <Avatar src={location?.state?.thumbnail.url}></Avatar>
             </Box>
             <Box>
-              <Typography className="title" color="textSecondary" gutterBottom>
+              <Title>
                 {location?.state?.name}
                 <Box>
                   <Chip label="Basic" />
                 </Box>
-              </Typography>
+              </Title>
             </Box>
           </Box>
         </Paper>
