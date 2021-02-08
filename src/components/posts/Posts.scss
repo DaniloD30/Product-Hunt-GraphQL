@@ -1,0 +1,27 @@
+.root {
+  min-width: 275;
+  padding: 10;
+  border-radius: 30;
+  cursor: pointer;
+
+  .avatarPosts {
+    padding: 20px;
+  }
+
+  .vote {
+      background-color: #F36B6B;
+      width: 30px;
+      height: 55px;
+      padding: 1px;
+ 
+  }
+
+  .description {
+    font-size: 15;
+  }
+
+  .box {
+    display: flex !important;
+    justify-content: space-around;
+  }
+}

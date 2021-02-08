@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`actions should working to store movieAction Dispatches the savePosts action and payload 1`] = `
+Array [
+  Object {
+    "newest": Array [],
+    "popular": Array [],
+    "type": "SAVE_POSTS",
+  },
+]
+`;

@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Circular Progress Index it should render correctly with store in "debug" mode 1`] = `ShallowWrapper {}`;
+
+exports[`Circular Progress Index it should render correctly without store 1`] = `ReactWrapper {}`;
